@@ -15,7 +15,7 @@ function CityList() {
         return (
           <li
             key={index}
-            className={`px-2 rounded ${
+            className={`px-2 rounded hover:cursor-pointer ${
               clickedIndex === index ? "bg-rose-500 text-stone-100" : ""
             }`}
             onClick={() => changeClickedStyle(index)}
