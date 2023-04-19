@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import CityList from "./components/CityLIst";
+import CityList from "./components/CityList";
 
 function App() {
   return (
