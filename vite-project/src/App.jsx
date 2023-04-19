@@ -6,9 +6,11 @@ function App() {
 
   return (
     <div className="App">
-      <div></div>
-      <div className="">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <div className="max-w-xl mx-auto mt-12">
+        <button
+          className="rounded-md outline outline-3 outline-offset-4 outline-blue-500"
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
         </button>
       </div>
