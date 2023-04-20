@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import EggList from "./components/EggList";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -7,12 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="max-w-xl mx-auto mt-12">
-        <button
-          className="rounded-md outline outline-3 outline-offset-4 outline-blue-500"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          count is {count}
-        </button>
+        <EggList eggs={["Cadbury", "Lindt", "Reeses"]}></EggList>
       </div>
     </div>
   );
