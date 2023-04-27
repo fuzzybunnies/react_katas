@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import SantasList from "./components/SantasList";
 import KataSection from "./components/KataSection";
 import EggList from "./components/EggList";
 import SimpleCounter from "./components/SimpleCounter";
@@ -10,7 +11,10 @@ function App() {
   return (
     <div className="App">
       <div className="flex justify-around p-12">
-        <KataSection headerText="EggList">
+        <KataSection headerText="Santa's List">
+          <SantasList></SantasList>
+        </KataSection>
+        <KataSection headerText=" EggList">
           <EggList eggs={["Cadbury", "Lindt", "Reeses"]}></EggList>
         </KataSection>
         <KataSection headerText="A Counter! Whee!!!">
