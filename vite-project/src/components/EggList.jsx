@@ -11,11 +11,13 @@ import EasterEgg from "./EasterEgg.jsx";
 
 function EggList({ eggs }) {
   return (
-    <ul>
-      {eggs.map((eggName, index) => (
-        <EasterEgg name={eggName} key={index}></EasterEgg>
-      ))}
-    </ul>
+    <div className="">
+      <ul className="list-disc">
+        {eggs.map((eggName, index) => (
+          <EasterEgg name={eggName} key={index}></EasterEgg>
+        ))}
+      </ul>
+    </div>
   );
 }
 
