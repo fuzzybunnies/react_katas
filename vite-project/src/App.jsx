@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className="flex justify-around p-12">
+      <div className="flex flex-wrap justify-around p-4 space-y-8">
         <KataSection headerText="Santa's List">
-          <SantasList></SantasList>
+          <SantasList send={(data) => console.log(data)}></SantasList>
         </KataSection>
         <KataSection headerText=" EggList">
           <EggList eggs={["Cadbury", "Lindt", "Reeses"]}></EggList>
