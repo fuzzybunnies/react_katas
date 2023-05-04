@@ -24,13 +24,13 @@ function App() {
         <KataSection headerText="A List of Jokes">
           <JokeList></JokeList>
         </KataSection>
-        <KataSection headerText="Santa's List">
+        <KataSection headerText="Santa's List" implemented="true">
           <SantasList send={(data) => console.log(data)}></SantasList>
         </KataSection>
-        <KataSection headerText=" EggList">
+        <KataSection headerText=" EggList" implemented="true">
           <EggList eggs={["Cadbury", "Lindt", "Reeses"]}></EggList>
         </KataSection>
-        <KataSection headerText="A Counter! Whee!!!">
+        <KataSection headerText="A Counter! Whee!!!" implemented="true">
           <SimpleCounter></SimpleCounter>
         </KataSection>
       </KataPage>
