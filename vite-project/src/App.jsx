@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import KataPage from "./components/KataPage";
 import DollarsPerDay from "./components/spending_reports/DollarsPerDay";
 import JokeList from "./components/JokeList";
 import SantasList from "./components/SantasList";
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="flex flex-wrap justify-around p-4 space-y-8">
+      <KataPage>
         <KataSection headerText="Daily Spend data">
           <DollarsPerDay></DollarsPerDay>
         </KataSection>
@@ -32,7 +33,7 @@ function App() {
         <KataSection headerText="A Counter! Whee!!!">
           <SimpleCounter></SimpleCounter>
         </KataSection>
-      </div>
+      </KataPage>
     </div>
   );
 }
